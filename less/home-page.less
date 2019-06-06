@@ -1,5 +1,21 @@
 .home {
+  margin: auto;
+  width: 100%;
 
+  header {
+    padding-bottom: 10px;
+    border-bottom: 2px dashed lightgrey;
+    width: 100%;
+    hr {
+      border-top: 2px dashed lightgray;
+      width: 100vw;
+     
+    }
+    img {
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+  }
   .content-section {
     margin: 30px 0;
     display: flex;
@@ -56,6 +72,13 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      button {
+        .button(75%, 40px, teal, white, 15px);
+        font-size: 1.75rem;
+        font-weight: bold;
+      }
+     
     }
   }
 }// home
