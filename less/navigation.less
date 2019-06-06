@@ -6,11 +6,25 @@
     justify-content: space-between;
     height: 100px;
     align-items: center;
+    border-bottom: 2px dashed @silver;
+
+    @media(@mobile) {
+        flex-direction: column;
+        justify-content: flex-end;
+        width: 80%;
+        margin: auto;
+    }
 
     nav {
         width: 45%;
         display: flex;
         justify-content: space-around;
+        
+        @media(@mobile) {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            width: 100%;;
+        }
 
         a {
             font-size: 1.5rem;
