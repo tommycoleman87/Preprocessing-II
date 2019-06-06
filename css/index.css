@@ -171,10 +171,11 @@ img {
 .nav-bar {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   height: 100px;
   align-items: center;
-  border-bottom: 2px dashed #C0C0C0;
+  overflow: visible;
 }
 @media (max-width: 500px) {
   .nav-bar {
@@ -200,6 +201,11 @@ img {
   font-size: 1.5rem;
   font-weight: bold;
 }
+.nav-bar .dot-ln {
+  width: 110%;
+  max-width: 880px;
+  border-bottom: 2px dashed #C0C0C0;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -213,9 +219,10 @@ img {
 }
 .home {
   margin: auto;
-  width: 100%;
+  width: 90%;
   color: #212529;
   font-weight: bold;
+  overflow: visible;
 }
 .home header {
   padding-bottom: 10px;

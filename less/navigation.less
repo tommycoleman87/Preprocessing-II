@@ -3,10 +3,12 @@
 .nav-bar {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 100px;
     align-items: center;
-    border-bottom: 2px dashed @silver;
+    overflow: visible;
+  
 
     @media(@mobile) {
         flex-direction: column;
@@ -30,6 +32,12 @@
             font-size: 1.5rem;
             font-weight: bold;
         }
+    }
+
+    .dot-ln {
+        width: 110%;
+        max-width: 880px;
+        border-bottom: 2px dashed @silver;
     }
     
 }
