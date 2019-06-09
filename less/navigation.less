@@ -1,1 +1,44 @@
 // Navigation Styles here
+.dot-ln {
+    margin: auto;
+    margin-bottom: 0;
+    max-width: 880px;
+    border-bottom: 2px dashed @silver;
+
+.nav-bar {
+    margin: auto;
+  max-width: 800px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+  overflow: visible;
+
+  @media (@mobile) {
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 80%;
+    margin: auto;
+  }
+
+  nav {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+
+    @media (@mobile) {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    a {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+  }
+
+}
+}
